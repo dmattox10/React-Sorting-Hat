@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Question = () => {
+const Finished = () => {
     return (
         <>
 
@@ -8,4 +8,4 @@ const Question = () => {
     )
 }
 
-export default Question
+export default Finished
