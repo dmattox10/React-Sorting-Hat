@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import { SortingContext } from '../contexts/SortingContext'
 
 const Progress = props => {
-    const percentage = '75'
-    const [color, setColor] = useState('green')
+    const { house, percentage } = useContext(SortingContext)
     return (
     <div className="container">
         <section>
             <article>
-                <input type="radio" name="switch-color" id="red" checked={color === 'red'} />
-                <input type="radio" name="switch-color" id="blue" checked={color === 'blue'} />
-                <input type="radio" name="switch-color" id="green" checked={color === 'green'} />
-                <input type="radio" name="switch-color" id="yellow" checked={color === 'yellow'} />
-                <input type="radio" name="switch-color" id="gray" checked={color === 'gray'} />
+                <input type="radio" name="switch-color" id="red" checked={house === 'gryffindor'} />
+                <input type="radio" name="switch-color" id="blue" checked={house === 'ravenclaw'} />
+                <input type="radio" name="switch-color" id="green" checked={house === 'slytherin'} />
+                <input type="radio" name="switch-color" id="yellow" checked={house === 'hufflepuff'} />
+                <input type="radio" name="switch-color" id="gray" checked={house === 'tie'} />
                 <div className="chart">
                     <div className={`bar gray bar-${percentage}`}>
                         <div className="face top">
