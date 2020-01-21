@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+
 import { SortingContext } from '../contexts/SortingContext'
 
 const Question = () => {
@@ -8,10 +9,26 @@ const Question = () => {
             <div className='card-container'>
                 <div className='card'>
                     <div className='front'>
-                        <p>Front</p>
+                        <p>{ question.text }</p>
                     </div>
                     <div className='back'>
-                        <p>Back</p>
+                        <form>
+                            { question.answers.map(answer =>
+                                <div className='form-check'
+                                    onClick={() => addPoints(answer.house)}
+                                >
+                                    <label>
+                                        <input
+                                            type='radio'
+                                            name={ question.id }
+                                            value={ answer.house }
+                                            className='form-check-input'
+                                        />
+                                        { answer.text }
+                                    </label>
+                                </div>
+                            )}     
+                        </form>
                     </div>
                 </div>
             </div>

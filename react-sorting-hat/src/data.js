@@ -1,6 +1,6 @@
 export default [
     {
-        question: 'Which of the following would you most hate people to call you?',
+        text: 'Which of the following would you most hate people to call you?',
         id: 0,
         answers: [
             {
@@ -22,7 +22,7 @@ export default [
         ]
     },
     {
-        question: 'After you have died, what would you most like people to do when they hear your name?',
+        text: 'After you have died, what would you most like people to do when they hear your name?',
         id: 1,
         answers: [
             {
@@ -44,7 +44,7 @@ export default [
         ]
     },
     {
-        question: 'Given the choice, would you rather invent a potion that would guarantee you:',
+        text: 'Given the choice, would you rather invent a potion that would guarantee you:',
         id: 2,
         answers: [
             {
@@ -66,7 +66,7 @@ export default [
         ]
     },
     {
-        question: 'How would you like to be known to history?',
+        text: 'How would you like to be known to history?',
         id: 3,
         answers: [
             {
@@ -88,7 +88,7 @@ export default [
         ]
     },
     {
-        question: 'You enter an enchanted garden. What would you be most curious to examine first?',
+        text: 'You enter an enchanted garden. What would you be most curious to examine first?',
         id: 4,
         answers: [
             {
@@ -110,7 +110,7 @@ export default [
         ]
     },
     {
-        question: 'What kind of instrument most pleases your ear?',
+        text: 'What kind of instrument most pleases your ear?',
         id: 5,
         answers: [
             {
@@ -132,7 +132,7 @@ export default [
         ]
     },
     {
-        question: 'Four boxes are placed before you. Which would you try and open?',
+        text: 'Four boxes are placed before you. Which would you try and open?',
         id: 6,
         answers: [
             {
@@ -154,7 +154,7 @@ export default [
         ]
     },
     {
-        question: 'Four goblets are placed before you. Which would you choose to drink?',
+        text: 'Four goblets are placed before you. Which would you choose to drink?',
         id: 7,
         answers: [
             {
@@ -176,7 +176,7 @@ export default [
         ]
     },
     {
-        question: 'Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:',
+        text: 'Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:',
         id: 8,
         answers: [
             {
@@ -198,7 +198,7 @@ export default [
         ]
     },
     {
-        question: 'A troll has gone berserk in the Headmaster\'s study at Hogwarts. It is about to smash, crush and tear several irreplaceable items and treasures, including a cure for dragon pox, which the Headmaster has nearly perfected; student records going back 1000 years and a mysterious handwritten book full of strange runes, believed to have belonged to Merlin. In which order would you rescue these objects from the troll\'s club, if you could? (Select Order)',
+        text: 'A troll has gone berserk in the Headmaster\'s study at Hogwarts. It is about to smash, crush and tear several irreplaceable items and treasures, including a cure for dragon pox, which the Headmaster has nearly perfected; student records going back 1000 years and a mysterious handwritten book full of strange runes, believed to have belonged to Merlin. In which order would you rescue these objects from the troll\'s club, if you could? (Select Order)',
         id: 9,
         answers: [
             {
@@ -228,7 +228,7 @@ export default [
         ]
     },
     {
-        question: 'Which would you rather be?',
+        text: 'Which would you rather be?',
         id: 10,
         answers: [
             {
@@ -258,7 +258,7 @@ export default [
         ]
     },
     {
-        question: 'Which of the following do you find most difficult to deal with?',
+        text: 'Which of the following do you find most difficult to deal with?',
         id: 11,
         answers: [
             {
@@ -284,7 +284,7 @@ export default [
         ]
     },
     {
-        question: 'What are you most looking forward to learning at Hogwarts?',
+        text: 'What are you most looking forward to learning at Hogwarts?',
         id: 12,
         answers: [
             {
@@ -318,7 +318,7 @@ export default [
         ]
     },
     {
-        question: 'If you could have any power, which would you choose? ',
+        text: 'If you could have any power, which would you choose? ',
         id: 13,
         answers: [
             {
@@ -348,7 +348,7 @@ export default [
         ]
     },
     {
-        question: 'Which of the following would you most like to study?',
+        text: 'Which of the following would you most like to study?',
         id: 14,
         answers: [
             {
@@ -382,7 +382,7 @@ export default [
         ]
     },
     {
-        question: 'One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do?',
+        text: 'One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do?',
         id: 15,
         answers: [
             {
@@ -404,7 +404,7 @@ export default [
         ]
     },
     {
-        question: 'You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:',
+        text: 'You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:',
         id: 16,
         answers: [
             {
@@ -426,7 +426,7 @@ export default [
         ]
     },
     {
-        question: 'Which road tempts you most?',
+        text: 'Which road tempts you most?',
         id: 17,
         answers: [
             {
@@ -448,7 +448,7 @@ export default [
         ]
     },
     {
-        question: 'Which nightmare would frighten you most?',
+        text: 'Which nightmare would frighten you most?',
         id: 18,
         answers: [
             {
@@ -470,7 +470,7 @@ export default [
         ]
     },
     {
-        question: 'Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you:',
+        text: 'Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you:',
         id: 19,
         answers: [
             {
@@ -492,7 +492,7 @@ export default [
         ]
     },
     {
-        question: 'A Muggle confronts you and says that they are sure you are a witch or wizard. Do you:',
+        text: 'A Muggle confronts you and says that they are sure you are a witch or wizard. Do you:',
         id: 20,
         answers: [
             {
@@ -514,7 +514,7 @@ export default [
         ]
     },
     {
-        question: 'Dawn or Dusk?',
+        text: 'Dawn or Dusk?',
         id: 21,
         answers: [
             {
@@ -528,7 +528,7 @@ export default [
         ]
     },
     {
-        question: 'Moon or Stars?',
+        text: 'Moon or Stars?',
         id: 22,
         answers: [
             {
@@ -542,7 +542,7 @@ export default [
         ]
     },
     {
-        question: 'Forest or River?',
+        text: 'Forest or River?',
         id: 23,
         answers: [
             {
@@ -556,7 +556,7 @@ export default [
         ]
     },
     {
-        question: 'Black or White?',
+        text: 'Black or White?',
         id: 24,
         answers: [
             {
@@ -570,7 +570,7 @@ export default [
         ]
     },
     {
-        question: 'Heads or Tails?',
+        text: 'Heads or Tails?',
         id: 25,
         answers: [
             {
@@ -584,7 +584,7 @@ export default [
         ]
     },
     {
-        question: 'Left or Right?',
+        text: 'Left or Right?',
         id: 26,
         answers: [
             {
