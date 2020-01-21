@@ -1,6 +1,7 @@
 export default [
     {
         question: 'Which of the following would you most hate people to call you?',
+        id: 0,
         answers: [
             {
                 text: 'Ordinary',
@@ -22,6 +23,7 @@ export default [
     },
     {
         question: 'After you have died, what would you most like people to do when they hear your name?',
+        id: 1,
         answers: [
             {
                 text: 'Miss you, but smile',
@@ -43,6 +45,7 @@ export default [
     },
     {
         question: 'Given the choice, would you rather invent a potion that would guarantee you:',
+        id: 2,
         answers: [
             {
                 text: 'Glory',
@@ -64,6 +67,7 @@ export default [
     },
     {
         question: 'How would you like to be known to history?',
+        id: 3,
         answers: [
             {
                 text: 'The Wise',
@@ -85,6 +89,7 @@ export default [
     },
     {
         question: 'You enter an enchanted garden. What would you be most curious to examine first?',
+        id: 4,
         answers: [
             {
                 text: 'The silver leafed tree bearing golden apples',
@@ -106,6 +111,7 @@ export default [
     },
     {
         question: 'What kind of instrument most pleases your ear?',
+        id: 5,
         answers: [
             {
                 text: 'Violin',
@@ -127,6 +133,7 @@ export default [
     },
     {
         question: 'Four boxes are placed before you. Which would you try and open?',
+        id: 6,
         answers: [
             {
                 text: 'The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking',
@@ -148,6 +155,7 @@ export default [
     },
     {
         question: 'Four goblets are placed before you. Which would you choose to drink?',
+        id: 7,
         answers: [
             {
                 text: 'The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds',
@@ -169,6 +177,7 @@ export default [
     },
     {
         question: 'Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:',
+        id: 8,
         answers: [
             {
                 text: 'A crackling log fire',
@@ -190,6 +199,7 @@ export default [
     },
     {
         question: 'A troll has gone berserk in the Headmaster\'s study at Hogwarts. It is about to smash, crush and tear several irreplaceable items and treasures, including a cure for dragon pox, which the Headmaster has nearly perfected; student records going back 1000 years and a mysterious handwritten book full of strange runes, believed to have belonged to Merlin. In which order would you rescue these objects from the troll\'s club, if you could? (Select Order)',
+        id: 9,
         answers: [
             {
                 text: '1. Dragon Pox Cure 2. Merlin\'s Book 3. Student\'s Records',
@@ -219,6 +229,7 @@ export default [
     },
     {
         question: 'Which would you rather be?',
+        id: 10,
         answers: [
             {
                 text: 'Trusted',
@@ -248,6 +259,7 @@ export default [
     },
     {
         question: 'Which of the following do you find most difficult to deal with?',
+        id: 11,
         answers: [
             {
                 text: 'Hunger',
@@ -273,6 +285,7 @@ export default [
     },
     {
         question: 'What are you most looking forward to learning at Hogwarts?',
+        id: 12,
         answers: [
             {
                 text: 'Every area of magic that I can',
@@ -306,6 +319,7 @@ export default [
     },
     {
         question: 'If you could have any power, which would you choose? ',
+        id: 13,
         answers: [
             {
                 text: 'Mind reading',
@@ -335,6 +349,7 @@ export default [
     },
     {
         question: 'Which of the following would you most like to study?',
+        id: 14,
         answers: [
             {
                 text: 'Centaurs',
@@ -368,6 +383,7 @@ export default [
     },
     {
         question: 'One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do?',
+        id: 15,
         answers: [
             {
                 text: 'Lie and say you don\'t know',
@@ -389,6 +405,7 @@ export default [
     },
     {
         question: 'You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:',
+        id: 16,
         answers: [
             {
                 text: 'Attempt to confuse the troll into letting all three of you pass without fighting?',
@@ -410,6 +427,7 @@ export default [
     },
     {
         question: 'Which road tempts you most?',
+        id: 17,
         answers: [
             {
                 text: 'The wide, sunny, grassy lane',
@@ -431,6 +449,7 @@ export default [
     },
     {
         question: 'Which nightmare would frighten you most?',
+        id: 18,
         answers: [
             {
                 text: 'Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling',
@@ -452,6 +471,7 @@ export default [
     },
     {
         question: 'Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you:',
+        id: 19,
         answers: [
             {
                 text: 'Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?',
@@ -473,6 +493,7 @@ export default [
     },
     {
         question: 'A Muggle confronts you and says that they are sure you are a witch or wizard. Do you:',
+        id: 20,
         answers: [
             {
                 text: 'Ask what makes them think so',
@@ -494,6 +515,7 @@ export default [
     },
     {
         question: 'Dawn or Dusk?',
+        id: 21,
         answers: [
             {
                 text: 'Dawn',
@@ -507,6 +529,7 @@ export default [
     },
     {
         question: 'Moon or Stars?',
+        id: 22,
         answers: [
             {
                 text: 'Moon',
@@ -520,6 +543,7 @@ export default [
     },
     {
         question: 'Forest or River?',
+        id: 23,
         answers: [
             {
                 text: 'Forest',
@@ -533,6 +557,7 @@ export default [
     },
     {
         question: 'Black or White?',
+        id: 24,
         answers: [
             {
                 text: 'Black',
@@ -546,6 +571,7 @@ export default [
     },
     {
         question: 'Heads or Tails?',
+        id: 25,
         answers: [
             {
                 text: 'Heads',
@@ -559,6 +585,7 @@ export default [
     },
     {
         question: 'Left or Right?',
+        id: 26,
         answers: [
             {
                 text: 'Left',

@@ -7,11 +7,11 @@ const Progress = props => {
     <div className="container">
         <section>
             <article>
-                <input type="radio" name="switch-color" id="red" checked={house === 'gryffindor'} />
-                <input type="radio" name="switch-color" id="blue" checked={house === 'ravenclaw'} />
-                <input type="radio" name="switch-color" id="green" checked={house === 'slytherin'} />
-                <input type="radio" name="switch-color" id="yellow" checked={house === 'hufflepuff'} />
-                <input type="radio" name="switch-color" id="gray" checked={house === 'tie'} />
+                <input type="radio" name="switch-color" id="red" checked={house === 'gryffindor'} onChange={()=>{}} />
+                <input type="radio" name="switch-color" id="blue" checked={house === 'ravenclaw'} onChange={()=>{}} />
+                <input type="radio" name="switch-color" id="green" checked={house === 'slytherin'} onChange={()=>{}} />
+                <input type="radio" name="switch-color" id="yellow" checked={house === 'hufflepuff'} onChange={()=>{}} />
+                <input type="radio" name="switch-color" id="gray" checked={house === 'tie'} onChange={()=>{}} />
                 <div className="chart">
                     <div className={`bar gray bar-${percentage}`}>
                         <div className="face top">
