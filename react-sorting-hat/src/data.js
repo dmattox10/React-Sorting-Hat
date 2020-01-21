@@ -259,15 +259,15 @@ export default [
             },
             {
                 text: 'Loneliness',
-                house: ['']
+                house: ['gryffindor','hufflepuff','slytherin']
             },
             {
                 text: 'Boredom',
-                house: ['']
+                house: ['gryffindor','slytherin','slytherin']
             },
             {
                 text: 'Being ignored',
-                house: ['']
+                house: ['ravenclaw','slytherin','slytherin']
             }
         ]
     },
@@ -276,31 +276,31 @@ export default [
         answers: [
             {
                 text: 'Every area of magic that I can',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             },
             {
                 text: 'Apparition and Disapparition',
-                house: ['']
+                house: ['gryffindor','slytherin','slytherin']
             },
             {
                 text: 'Transfiguration',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             },
             {
                 text: 'Flying on a broomstick',
-                house: ['']
+                house: ['gryffindor','hufflepuff','slytherin']
             },
             {
                 text: 'Hexes and Jinxes',
-                house: ['']
+                house: ['slytherin']
             },
             {
                 text: 'All about magical creatures, and how to befriend/care for them',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             },
             {
                 text: 'Secrets about the castle',
-                house: ['']
+                house: ['gryffindor','slytherin']
             },
         ]
     },
@@ -309,27 +309,27 @@ export default [
         answers: [
             {
                 text: 'Mind reading',
-                house: ['']
+                house: ['ravenclaw','slytherin','slytherin']
             },
             {
                 text: 'Invisibility',
-                house: ['']
+                house: ['gryffindor','gryffindor','hufflepuff','slytherin','slytherin']
             },
             {
                 text: 'Superhuman strength',
-                house: ['']
+                house: ['hufflepuff','hufflepuff','slytherin','slytherin','slytherin']
             },
             {
                 text: 'Speaking with Animals',
-                house: ['']
+                house: ['ravenclaw','hufflepuff','slytherin']
             },
             {
                 text: 'Changing the past',
-                house: ['']
+                house: ['gryffindor','slytherin','slytherin','slytherin','slytherin']
             },
             {
                 text: 'Changing your appearance at will',
-                house: ['']
+                house: ['gryffindor','ravenclaw','ravenclaw','slytherin','slytherin']
             },
         ]
     },
@@ -338,31 +338,31 @@ export default [
         answers: [
             {
                 text: 'Centaurs',
-                house: ['']
+                house: ['gryffindor','ravenclaw','slytherin']
             },
             {
                 text: 'Goblins',
-                house: ['']
+                house: ['ravenclaw','ravenclaw','slytherin','slytherin','slytherin']
             },
             {
                 text: 'Merpeople',
-                house: ['']
+                house: ['hufflepuff','slytherin','slytherin']
             },
             {
                 text: 'Ghosts',
-                house: ['']
+                house: ['gryffindor','ravenclaw','slytherin']
             },
             {
                 text: 'Vampires',
-                house: ['']
+                house: ['slytherin']
             },
             {
                 text: 'Werewolves',
-                house: ['']
+                house: ['gryffindor','hufflepuff','slytherin']
             },
             {
                 text: 'Trolls',
-                house: ['']
+                house: ['hufflepuff','slytherin','slytherin']
             }
         ]
     },
@@ -371,19 +371,19 @@ export default [
         answers: [
             {
                 text: 'Lie and say you don\'t know',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             },
             {
                 text: 'Tell Professor Flitwick that he ought to ask your classmate',
-                house: ['']
+                house: ['gryffindor','slytherin']
             },
             {
                 text: 'Tell Professor Flitwick the truth',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             },
             {
                 text: 'You would not wait to be asked to tell Professor Flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started',
-                house: ['']
+                house: ['slytherin']
             }
         ]
     },
@@ -392,19 +392,19 @@ export default [
         answers: [
             {
                 text: 'Attempt to confuse the troll into letting all three of you pass without fighting?',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             },
             {
                 text: 'Suggest drawing lots to decide which of you will fight?',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             },
             {
                 text: 'Suggest that all three of you should fight',
-                house: ['']
+                house: ['slytherin']
             },
             {
                 text: 'Volunteer to fight?',
-                house: ['']
+                house: ['gryffindor','slytherin']
             }
         ]
     },
@@ -413,19 +413,19 @@ export default [
         answers: [
             {
                 text: 'The wide, sunny, grassy lane',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             },
             {
                 text: 'The narrow, dark, lantern-lit alley',
-                house: ['']
+                house: ['slytherin']
             },
             {
                 text: 'The twisting, leaf-strewn path through woods',
-                house: ['']
+                house: ['gryffindor','slytherin']
             },
             {
                 text: 'The cobbled street lined with ancient buildings',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             }
         ]
     },
@@ -434,19 +434,19 @@ export default [
         answers: [
             {
                 text: 'Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             },
             {
                 text: 'An eye at the keyhole of the dark, windowless room in which you are locked',
-                house: ['']
+                house: ['gryffindor','slytherin']
             },
             {
                 text: 'Waking up to find that neither your friends nor your family have any idea who you are',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             },
             {
                 text: 'Being forced to speak in such a silly voice that hardly anyone can understand you, and everyone laughs at you',
-                house: ['']
+                house: ['slytherin']
             }
         ]
     },
@@ -455,19 +455,19 @@ export default [
         answers: [
             {
                 text: 'Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             },
             {
                 text: 'Draw your wand and try to discover the source of the noise?',
-                house: ['']
+                house: ['gryffindor','slytherin']
             },
             {
                 text: 'Draw your wand and stand your ground?',
-                house: ['']
+                house: ['slytherin']
             },
             {
                 text: 'Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             }
         ]
     },
@@ -476,19 +476,19 @@ export default [
         answers: [
             {
                 text: 'Ask what makes them think so',
-                house: ['']
+                house: ['ravenclaw','slytherin']
             },
             {
                 text: 'Agree, and ask whether they\'d like a free sample of a jinx',
-                house: ['']
+                house: ['slytherin']
             },
             {
                 text: 'Agree, and walk away, leaving them to wonder whether you are bluffing',
-                house: ['']
+                house: ['gryffindor','slytherin']
             },
             {
                 text: 'Tell them that you are worried about their mental health, and offer to call a doctor',
-                house: ['']
+                house: ['hufflepuff','slytherin']
             }
         ]
     },
@@ -523,11 +523,11 @@ export default [
         answers: [
             {
                 text: 'Forest',
-                house: ['']
+                house: ['gryffindor','ravenclaw','slytherin']
             },
             {
                 text: 'River',
-                house: ['']
+                house: ['hufflepuff','slytherin','slytherin']
             }
         ]
     },
@@ -536,11 +536,11 @@ export default [
         answers: [
             {
                 text: 'Black',
-                house: ['']
+                house: ['gryffindor','slytherin','slytherin']
             },
             {
                 text: 'White',
-                house: ['']
+                house: ['ravenclaw','hufflepuff','slytherin']
             }
         ]
     },
@@ -549,11 +549,11 @@ export default [
         answers: [
             {
                 text: 'Heads',
-                house: ['']
+                house: ['ravenclaw','hufflepuff','slytherin']
             },
             {
                 text: 'Tails',
-                house: ['']
+                house: ['gryffindor','slytherin','slytherin']
             }
         ]
     },
@@ -562,11 +562,11 @@ export default [
         answers: [
             {
                 text: 'Left',
-                house: ['']
+                house: ['ravenclaw','slytherin','slytherin']
             },
             {
                 text: 'Right',
-                house: ['']
+                house: ['gryffindor','hufflepuff','slytherin']
             }
         ]
     }
