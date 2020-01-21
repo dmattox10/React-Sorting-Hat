@@ -825,6 +825,12 @@ body {
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   font-family: 'Arimo', sans-serif;
+  display:-webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .card-container:hover .card {
   -webkit-transform: rotateY(180deg) translateX(100%);
