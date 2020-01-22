@@ -48,7 +48,7 @@ export const useQuestions = (data) => {
         updatePoints(oldPoints => [...oldPoints, ...houseArr]) 
     }
 
-    let percentage = Math.floor(usedQuestions.length * 3.7)
+    let percentage = Math.floor(usedQuestions.length * multiplier)
 
     useEffect(() => {
         updateHouse(getHighestValue(points))
