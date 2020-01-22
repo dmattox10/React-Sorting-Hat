@@ -13,35 +13,45 @@ export const useQuestions = (data) => {
     })
     const [points, updatePoints] = useState([])
 
-    const calculateHouse = () => {
-        updateHouse(getHighestValue(points, 1)[0])
-    }
-
-    const getHighestValue = (arr, count) => {
-        var tmp = {}, tops = []
-        arr.forEach(function(item) {
-            tmp[item] = tmp[item] ? tmp[item]+1 : 1
+    const getHighestValue = (arr) => {
+        let counts = {}
+        for (let i = 0; i < arr.length; i++) {
+            let house = arr[i]
+            counts[house] = counts[house] ? counts[house] + 1 : 1
+        }
+        let sortable = []
+        for (let house in counts) {
+            sortable.push(counts[house])
+        }
+        sortable.sort(function(a, b) {
+            return b - a
         })
-        tops = Object.keys(tmp).sort(function(a, b) { return tmp[a]-tmp[b] })
-        return tops.slice(-(count)).reverse()
+        if (sortable[0] === sortable[1]) {
+            return 'tie'
+        }
+        else {
+            for (let house in counts) {
+                if (counts[house] === sortable[0]) {
+                    return house
+                }
+            }
+        }
     }
-
+    /*
     const setCurrentQuestion = () => {
         const currentQuestion = questions.pop()
         updateUsedQuestions(oldUsed => [...oldUsed, currentQuestion])
         updateQuestion(currentQuestion)
     }
-
+    */
     const addPoints = (houseArr) => {
-        updatePoints(oldPoints => [...oldPoints, ...houseArr])
-        
+        updatePoints(oldPoints => [...oldPoints, ...houseArr]) 
     }
 
     let percentage = Math.floor(usedQuestions.length * 3.7)
 
     useEffect(() => {
-        updateHouse(getHighestValue(points, 1)[0])
-        console.log(getHighestValue(points, 1))
+        updateHouse(getHighestValue(points))
         const currentQuestion = questions.pop()
         updateUsedQuestions(oldUsed => [...oldUsed, currentQuestion])
         updateQuestion(currentQuestion)
