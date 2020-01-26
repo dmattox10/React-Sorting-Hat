@@ -813,9 +813,10 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  padding: 1.5rem;
 }
 .front {
-  padding: 1rem;
+  
   display:-webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -829,7 +830,6 @@ body {
   transform: rotateY(0deg);
 }
 .back {
-  padding: 1rem;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
@@ -850,5 +850,5 @@ body {
 }
 
 .form-check {
-  margin: 1rem;
+  margin: 2rem;
 }

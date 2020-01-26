@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 
 import { SortingContext } from '../contexts/SortingContext'
 
+import Finished from './Finished'
+
 const Question = () => {
     const { question, addPoints } = useContext(SortingContext)
     return (
@@ -26,9 +28,11 @@ const Question = () => {
                                         />
                                         { answer.text }
                                     </label>
+                                    {question.id === 27 ? <Finished /> : null}
                                 </div>
                             )}     
                         </form>
+                        
                     </div>
                 </div>
             </div>

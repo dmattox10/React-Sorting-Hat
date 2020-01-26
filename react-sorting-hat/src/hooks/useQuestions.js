@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const multiplier = 3.7
 
@@ -37,6 +37,27 @@ export const useQuestions = (data) => {
             }
         }
     }
+
+    const getWinner = (arr) => {
+        let counts = {}
+        for (let i = 0; i < arr.length; i++) {
+            let house = arr[i]
+            counts[house] = counts[house] ? counts[house] + 1 : 1
+        }
+        let sortable = []
+        for (let house in counts) {
+            sortable.push(counts[house])
+        }
+        sortable.sort(function(a, b) {
+            return b - a
+        })
+        
+        for (let house in counts) {
+            if (counts[house] === sortable[0]) {
+                return house
+            }
+        }
+    }
     /*
     const setCurrentQuestion = () => {
         const currentQuestion = questions.pop()
@@ -45,16 +66,40 @@ export const useQuestions = (data) => {
     }
     */
     const addPoints = (houseArr) => {
-        updatePoints(oldPoints => [...oldPoints, ...houseArr]) 
+        let nextQuestion
+        updatePoints(oldPoints => [...oldPoints, ...houseArr])
+        if (questions.length > 0) {
+            nextQuestion = questions.pop()
+        }
+        else {
+            nextQuestion = finale()
+        }
+        updateUsedQuestions(oldUsed => [...oldUsed, nextQuestion])
+        updateQuestion(nextQuestion)
+    }
+    
+    const finale = () => {
+        
+        return {
+            text: 'Your House Is...',
+            id: 27,
+            answers: [
+                {
+                    text: `${getWinner(points)}!`,
+                    house: []
+                }
+            ]
+        }
     }
 
     let percentage = Math.floor(usedQuestions.length * multiplier)
 
     useEffect(() => {
         updateHouse(getHighestValue(points))
-        const currentQuestion = questions.pop()
-        updateUsedQuestions(oldUsed => [...oldUsed, currentQuestion])
-        updateQuestion(currentQuestion)
+        //const currentQuestion = questions.pop()
+        //const currentQuestion = usedQuestions[usedQuestions.length - 1]
+        //updateUsedQuestions(oldUsed => [...oldUsed, currentQuestion])
+        //updateQuestion(currentQuestion)
 
     }, [points])
     return [question, addPoints, house, percentage]
