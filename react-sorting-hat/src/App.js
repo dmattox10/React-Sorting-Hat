@@ -6,7 +6,7 @@ import Finished from './components/Finished'
 import Progress from './components/Progress'
 import Question from './components/Question'
 
-import data from './data-copy'
+import data from './data'
 
 const App = () => {
     const [question, addPoints, house, percentage] = useQuestions(data)

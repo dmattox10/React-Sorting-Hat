@@ -16,7 +16,7 @@ It may not be obvious at first when using the app, that you need to mouse off of
 ##### Todo
 I would like to add a touch more color, and some social features.
 
-This project is hosted on my private server [HERE CLICK ME!](https://potter.danielmattox.com)
+This project is hosted on my private server [HERE CLICK ME!](https://magic.danielmattox.com)
 
 ##### Screenshots
 The progress bar changes color as it fills to reflect the house that you are most alike up to that point based on your answers.
