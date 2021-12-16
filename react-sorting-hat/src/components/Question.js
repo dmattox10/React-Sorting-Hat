@@ -4,7 +4,28 @@ import { SortingContext } from '../contexts/SortingContext'
 
 import Finished from './Finished'
 
+import gryffindor from '../assets/gryffindor.webp'
+import hufflepuff from '../assets/hufflepuff.webp'
+import ravenclaw from '../assets/ravenclaw.webp'
+import slytherin from '../assets/slytherin.webp'
+
 const Question = () => {
+
+    const imageSwitch = house => {
+        switch(house) {
+            case 'gryffindor':
+                return gryffindor
+            case 'hufflepuff':
+                return hufflepuff
+            case 'ravenclaw':
+                return ravenclaw
+            case 'slytherin':
+                return slytherin
+            default:
+                return null
+        }
+    }
+
     const { question, addPoints } = useContext(SortingContext)
     return (
         <div className='card-wrapper'>
@@ -28,7 +49,7 @@ const Question = () => {
                                         />
                                         { answer.text }
                                     </label>
-                                    {question.id === 27 ? <Finished /> : null}
+                                    {question.id === 27 ? <Finished image={imageSwitch(answer.text)} /> : null}
                                 </div>
                             )}     
                         </form>

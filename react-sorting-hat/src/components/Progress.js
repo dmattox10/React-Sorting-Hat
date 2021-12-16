@@ -37,14 +37,3 @@ const Progress = props => {
 }
 
 export default Progress
-
-/*
-<nav class="actions">
-    <label for="red">Red</label>
-    <label for="blue">Blue</label>
-    <label for="green">Green</label>
-    <label for="yellow">Yellow</label>
-</nav>
-
-<div className="bar bar-64 gray"
-*/

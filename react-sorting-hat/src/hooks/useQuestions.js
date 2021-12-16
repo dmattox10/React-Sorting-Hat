@@ -81,11 +81,11 @@ export const useQuestions = (data) => {
     const finale = () => {
         
         return {
-            text: 'Your House Is...',
+            text: 'Your house is....',
             id: 27,
             answers: [
                 {
-                    text: `${getWinner(points)}!`,
+                    text: `${getWinner(points)}`,
                     house: []
                 }
             ]

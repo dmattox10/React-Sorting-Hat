@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Finished = () => {
+const Finished = props => {
+
+    const { image } = props
+    console.log(image)
     return (
-        <button onClick={() => window.location.reload(false)}>Click to retry!</button>
+        <div>
+            <img src={image} />
+            <button onClick={() => window.location.reload(false)}>Click to retry!</button>
+        </div>
     )
 }
 
