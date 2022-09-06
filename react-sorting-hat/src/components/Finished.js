@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Finished = props => {
+export const Finished = props => {
 
     const { image } = props
     console.log(image)
@@ -11,5 +11,3 @@ const Finished = props => {
         </div>
     )
 }
-
-export default Finished

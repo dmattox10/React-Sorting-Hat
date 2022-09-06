@@ -114,6 +114,16 @@ section article p, section article:last-of-type {
   margin-bottom: 0;
 }
 
+.App {
+  height: 900px; 
+  /* width: 900px;  */
+  background: #ddd;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; 
+}
+
 .container {
   z-index: 1;
   display: flex;
@@ -121,6 +131,13 @@ section article p, section article:last-of-type {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 4em;
+  position: relative;
+  top: 40%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /*
@@ -783,6 +800,8 @@ body {
   -webkit-perspective-origin: right;
   -moz-perspective-origin: right;
   perspective-origin: right;
+
+  margin-bottom: 3rem;
 }
 .card {
   width: 600px;

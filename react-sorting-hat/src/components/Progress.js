@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { SortingContext } from '../contexts/SortingContext'
 
-const Progress = props => {
+export const Progress = props => {
     const { house, percentage } = useContext(SortingContext)
     return (
     <div className="container">
@@ -35,5 +35,3 @@ const Progress = props => {
     </div> 
     )
 }
-
-export default Progress

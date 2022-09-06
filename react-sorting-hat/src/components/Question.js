@@ -2,14 +2,14 @@ import React, { useContext } from 'react'
 
 import { SortingContext } from '../contexts/SortingContext'
 
-import Finished from './Finished'
+import { Finished } from './Finished'
 
 import gryffindor from '../assets/gryffindor.webp'
 import hufflepuff from '../assets/hufflepuff.webp'
 import ravenclaw from '../assets/ravenclaw.webp'
 import slytherin from '../assets/slytherin.webp'
 
-const Question = () => {
+export const Question = () => {
 
     const imageSwitch = house => {
         switch(house) {
@@ -60,5 +60,3 @@ const Question = () => {
         </div>
     )
 }
-
-export default Question
