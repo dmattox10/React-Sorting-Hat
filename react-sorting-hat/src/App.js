@@ -21,6 +21,7 @@ const App = () => {
           <Progress />
           </div>
         </SortingContext.Provider>
+        <h6>Created by Daniel Mattox, source code available <a href='https://github.com/dmattox10/React-Sorting-Hat'>here</a></h6>
       </div>
     )
 }
