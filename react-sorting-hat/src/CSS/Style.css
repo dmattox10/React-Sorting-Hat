@@ -130,9 +130,9 @@ section article p, section article:last-of-type {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   position: relative;
-  top: 40%;
+  top: 30%;
   left: 50%;
 
   -webkit-transform: translate(-50%, -50%);
