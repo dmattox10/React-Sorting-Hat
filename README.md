@@ -20,8 +20,8 @@ This project is hosted on my private server [HERE CLICK ME!](https://magic.danie
 
 ##### Screenshots
 The progress bar changes color as it fills to reflect the house that you are most alike up to that point based on your answers.
-<img src="media/1.png" align="left" style="width: 50%" />
-<img src="media/2.png" align="right" style="width: 50%" />
-<img src="media/3.png" align="left" style="width: 50%" />
-<img src="media/4.png" align="right" style="width: 50%" />
+<img src="media/1.png" align="left" style="width: 100%" />
+<img src="media/2.png" align="right" style="width: 100%" />
+<img src="media/3.png" align="left" style="width: 100%" />
+<img src="media/4.png" align="right" style="width: 100%" />
 <img src="media/tie.png" align="center" style="width: 100%" />
