@@ -26,6 +26,27 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: #111;
+  font-family: 'OldTypefaces', serif;
 }
 
 html {
@@ -63,15 +84,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-body {
-  font-family: 'OldTypefaces', serif;
+/* body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1em;
   text-align: center;
   color: #444;
   background: #d0d0d0;
-}
+} */
 
 h1 {
   font-size: 2.5em;
@@ -127,7 +147,7 @@ section article p, section article:last-of-type {
 .container {
   z-index: 1;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-direction: column;
   justify-content: center;
   margin-bottom: 2em;
@@ -141,10 +161,7 @@ section article p, section article:last-of-type {
 }
 
 /*
-*
-*
-START // CHART'S RULES
- -> "if you're picking code, don't forget the variables :)"
+Bar
 */
 .chart {
   font-size: 1em;
@@ -704,11 +721,6 @@ input[id='gray']:checked ~ .chart .growing-bar {
   width: 100%;
 }
 
-/*
-END // CHART'S RULES
-*
-*
-*/
 .chart.grid {
   display: flex;
   flex-direction: row;
@@ -770,10 +782,9 @@ input[id='gray']:checked ~ .actions label[for='gray'] {
   border: 1px solid #031523;
   background-color: #0a4069;
 }
-
-/* =====================================================
-Flip Card CSS
-===================================================== */
+/*
+Cards
+*/
 *{box-sizing:border-box}
 body {
   height: 100vh;
@@ -785,15 +796,16 @@ body {
   align-items: center;
 }
 .card-container {
-  width: 600px;
-  height: 340px;
+  width: 95%;
+  height: 70%;
   margin: 0 auto; 
   position: relative;
   -webkit-perspective: 1000;
 	-moz-perspective: 1000;
-	perspective: 1000;
+	perspective: 1000px;
   -moz-transform: perspective(1400px);
 	-ms-transform: perspective(1400px);
+  transform: perspective(140px);
 	-webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d; 
   transform-style: preserve-3d;
@@ -804,8 +816,8 @@ body {
   margin-bottom: 3rem;
 }
 .card {
-  width: 600px;
-  height: 340px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, .7), 0 17px 17px 0 rgba(0, 0, 0, .5);
   position: relative; 
   -webkit-transform: rotate(0deg);
@@ -879,3 +891,125 @@ img {
        -o-transform: scale(0.3); /* Opera 10.5+ */
           transform: scale(0.3);
 }
+
+@media (min-width: 1024px){
+
+    .card-container{
+      width: 80%;
+      height: 60%;
+    } 
+  
+  }
+
+  
+  
+  .container {
+    min-width: 700px;
+    min-height: 350px;
+    border-radius: 20px;
+    position: relative;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .side {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    color: #fff;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+  .content {
+    transform: translatez(70px) scale(0.8);
+    line-height: 1.5em;
+  }
+  .content h1 {
+    position: relative;
+  }
+  .content p {
+    margin-top: 50px;
+    line-height: 2em;
+  }
+  .content h1:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 3px;
+    background-color: #3e3;
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .front {
+    z-index: 2;
+    background-size: 100vh;
+    background-size: cover;
+    background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+  }
+  .back {
+    background-color: #333;
+    transform: rotateY(180deg);
+    z-index: 0;
+    padding-top: 10px;
+    background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+  }
+  /* .container:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  } */
+  form {
+    text-align: left;
+  }
+  .back h1 {
+    margin: 0;
+  }
+  form label,
+  form input {
+    display: block;
+  }
+  form input,
+  form textarea {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #444;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+  }
+  form label {
+    margin: 15px 0;
+  }
+  form input[type="submit"] {
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: 3px solid #555;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* my button style  */
+  .white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: #122;
+    border-radius: 3px;
+    color: #fff;
+    transition: 0.35s ease-in-out;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    font-family: "Montserrat";
+  }
+  
+  .white-mode:hover {
+    background-color: #fff;
+    color: #122;
+  }
+  

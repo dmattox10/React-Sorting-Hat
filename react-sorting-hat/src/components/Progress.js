@@ -4,7 +4,7 @@ import { SortingContext } from '../contexts/SortingContext'
 export const Progress = props => {
   const { house, percentage } = useContext(SortingContext)
   return (
-    <div className='container'>
+    <div className='progress'>
       <section>
         <article>
           <input type='radio' name='switch-color' id='red' checked={house === 'gryffindor'} onChange={() => {}} />

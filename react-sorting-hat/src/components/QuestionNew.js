@@ -9,7 +9,7 @@ import hufflepuff from '../assets/hufflepuff.webp'
 import ravenclaw from '../assets/ravenclaw.webp'
 import slytherin from '../assets/slytherin.webp'
 
-export const Question = () => {
+export const QuestionNew = () => {
   const imageSwitch = house => {
     switch (house) {
       case 'gryffindor':
@@ -27,15 +27,24 @@ export const Question = () => {
 
   const { question, addPoints } = useContext(SortingContext)
   return (
-    <div className='card-wrapper'>
       <div className='card-container'>
-        <div className='card'>
-          <div className='front'>
-            <p>{question.text}</p>
-          </div>
-          <div className='back'>
-            <form>
-              {question.answers.map((answer, i) =>
+        <div className='front side'>
+            <div className='content'>
+                <h1>
+                    Hover or Tap text to flip the card and answer:
+                </h1>
+                <p>
+                    {question.text}
+                </p>
+            </div>
+        </div>
+        <div className='back side'>
+            <div className='content'>
+                <h1>
+                    Click or tap an answer to choose it
+                </h1>
+                <form>
+                    {question.answers.map((answer, i) =>
                 <div
                   className='form-check'
                   key={i}
@@ -54,10 +63,8 @@ export const Question = () => {
                 </div>
               )}
             </form>
-
-          </div>
+            </div>
         </div>
       </div>
-    </div>
   )
 }
