@@ -180,7 +180,7 @@ form {
 }
 
 .middle-area {
-  height: 65vh;
+  height: 75vh;
   position: relative;
   margin: unset;
   margin-top: 3rem;
@@ -188,7 +188,6 @@ form {
 
 .bottom-area {
   height: 5vh;
-  position: relative;
 }
 
 #root {
@@ -212,7 +211,15 @@ form {
   }
   .card-outer{
     width: 100%;
-    height: 60%;
+    height: 80%;
+  }
+  .flip-box {
+    height: 600px;
+  }
+  .bottom-area {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -222,7 +229,7 @@ form {
   }
   .card-outer{
     width: 100%;
-    height: 60%;
+    height: 90%;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */

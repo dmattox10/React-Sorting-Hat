@@ -20,8 +20,8 @@ const App = () => {
             <Question />
           </div>
       </SortingContext.Provider>
-      <div className='bottom-area text-center text'>
-        <h6>Created by Daniel Mattox, source code available <a className='text' href='https://github.com/dmattox10/React-Sorting-Hat'>here</a></h6>
+      <div className='bottom-area'>
+        <h6 className='text-center text'>Created by Daniel Mattox, source code available <a className='text' href='https://github.com/dmattox10/React-Sorting-Hat'>here</a></h6>
       </div>
       <svg id="svg-filter">
         <filter id="svg-blur">
