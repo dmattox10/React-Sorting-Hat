@@ -175,7 +175,7 @@ form {
 }
 
 .top-area {
-  height: 20vh;
+  /* height: 20vh; */
   position: relative;
   top: 0;
 }
@@ -184,6 +184,7 @@ form {
   height: 65vh;
   position: relative;
   margin: unset;
+  margin-top: 3rem;
 }
 
 .bottom-area {
