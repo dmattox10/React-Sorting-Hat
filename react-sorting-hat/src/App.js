@@ -4,8 +4,7 @@ import { useQuestions } from './hooks/useQuestions'
 
 import { Message } from './components/Message'
 import { Progress } from './components/Progress'
-import { Question } from './components/Question'
-import { QuestionNew } from './components/QuestionNew'
+import  Question  from './components/Question'
 
 import data from './data-no-weights'
 
@@ -18,12 +17,17 @@ const App = () => {
             <Progress />
           </div>
           <div className='middle-area'>
-            <QuestionNew />
+            <Question />
           </div>
       </SortingContext.Provider>
-      <div className='bottom-area'>
+      <div className='bottom-area text-center'>
         <h6>Created by Daniel Mattox, source code available <a href='https://github.com/dmattox10/React-Sorting-Hat'>here</a></h6>
       </div>
+      <svg id="svg-filter">
+        <filter id="svg-blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"></feGaussianBlur>
+        </filter>
+    </svg>
     </div>
   )
 }

@@ -1,6 +1,11 @@
-/*
-Bar
-*/
+.progress section article {
+    position: absolute;
+  }
+
+  .progress {
+    margin-top: 11rem;
+  }
+
 .chart {
     font-size: 1em;
     -webkit-perspective: 1000px;
@@ -582,13 +587,18 @@ Bar
   .chart.grid .exercise .bar:last-child {
     margin-right: 0;
   }
+
+  .form-check {
+    margin: 2rem;
+    max-height: 100%;
+  }
   
   .actions {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
     padding-bottom: 2em;
-    border-bottom: 1px dotted rgba(68, 68, 68, 0.4);
+    /* border-bottom: 1px dotted rgba(68, 68, 68, 0.4); */
   }
   
   label {
@@ -597,8 +607,7 @@ Bar
     margin: 0 .2em;
     cursor: pointer;
     transition: all .15s ease-in-out;
-    color: #0a4069;
-    border: 1px solid rgba(254, 254, 254, 0.6);
+    color: #fff;
     border-radius: 0;
     flex: 1;
   }
