@@ -40,7 +40,7 @@ const Question = (props) => {
                     <div className="back text-center">
                         <div className='inner color-white blur-content'></div>
                         <div className="inner text">
-                                <h3 className="flip-box-header">Un-hover or Tap to flip the card and read the question:</h3>
+                                <h3 className="flip-box-header">Un-hover or Tap the brick background to flip the card back and read the question:</h3>
                                 <form>
                                     {question.answers.map((answer, i) =>
                                         <div
